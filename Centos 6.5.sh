@@ -7,7 +7,7 @@ echo "Installing OpenCV 2.4.10"
 unzip OpenCV-2.4.10.zip
 cd opencv-2.4.10
 cmake -DCMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -DBUILD_NEW_PYTHON_SUPPORT=NO  -D WITH_OPENGL=ON -D CUDA_GENERATION=Auto .
-make -j4
+make -j8
 sudo make install -j8
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
