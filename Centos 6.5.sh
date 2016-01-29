@@ -13,6 +13,13 @@ sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 echo "OpenCV 2.4.10 ready to be used"
 
+Fixed. After I followed these steps, the error disappeared:
+
+Create administrator user accounts in both machines with the same username and password.
+Define hostnames by editing the file: /etc/hosts
+Make a clean install of ssh in both machines.
+Configure ssh for connecting without a password. To do this follow these links: http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/ and http://dustymabe.com/2012/08/18/exchanging-ssh-keys-using-ssh-copy-id/
 
 
+service iptables stop
 
